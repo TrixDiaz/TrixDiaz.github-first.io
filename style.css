@@ -1,0 +1,216 @@
+/*---------------------*\
+  #Reset 
+\*----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/*---------------------*\
+  #Colors 
+\*----------------------*/
+:root {
+  --orange-color: #df5b26;
+  --white-color: #ffffff;
+  --black-color: #252526;
+  --dark-black-color: #111111;
+  --pure-black-color: #000000;
+  --gray-color: #bcbcbc;
+  --red-color: #ff2f04;
+  --yellow-color: #ffff04;
+  --blue-color: #05b7e6;
+}
+
+/*---------------------*\
+  #Reusable 
+\*----------------------*/
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.grid-container-2 > div,
+.grid-container-3 > div,
+.grid-container-4 > div {
+  text-align: center;
+  /* background-color: var(--orange-color); */
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/*---------------------*\
+  #Buttons 
+\*----------------------*/
+.button-orange {
+  background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--white-color);
+}
+.button-orange:hover{
+  background-color: transparent;
+  color: var(--white-color);
+}
+.button-outline-orange {
+  background-color: transparent;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--orange-color);
+}
+.button-outline-orange:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+
+/*---------------------*\
+  #Padding 
+\*----------------------*/
+.padding {
+  padding: 1rem;
+}
+
+/*---------------------*\
+  #Margin 
+\*----------------------*/
+.margin {
+  margin: 1rem;
+}
+
+/*---------------------*\
+  #Header 
+\*----------------------*/
+.header .item-1,
+.header .item-2,
+.header .item-3,
+.header .item-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .item-2 ul {
+  display: flex;
+}
+
+.header .item-2 ul li a {
+  padding-inline: 0.5rem;
+  color: var(--white-color);
+}
+
+.header .item-2 ul li a:hover {
+  border-bottom: 2px solid var(--orange-color);
+}
+
+.header .icon {
+  display: none;
+}
+
+.header .middle-button{
+  display: none;
+}
+
+/*---------------------*\
+  #SideBar 
+\*----------------------*/
+/* .sidebar .item-1 {
+  grid-row: 1 / 4;
+} 
+
+.sidebar .item-2 {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.sidebar .social-media{
+  padding: 0.25rem;
+}
+
+.sidebar .social-media i{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.25rem ;
+
+}
+
+.sidebar .main{
+  display: block;
+  text-align: start;
+}
+
+*/
+
+/*---------------------*\
+  #Body 
+\*----------------------*/
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+/*---------------------*\
+  #Media Queries 
+\*----------------------*/
+
+/* Tablets and larger screens (e.g., iPad) */
+@media (max-width: 1024px) {
+}
+
+/* Mobile phones and smaller screens */
+@media (max-width: 768px) {
+/*---------------------*\
+  #Header 
+\*----------------------*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .item-2,
+  .header .item-3 {
+    display: none;
+  }
+  .header .logo,
+  .header .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bi-list-nested {
+    max-width: 100%;
+  }
+  .header .middle-button{
+    display: block;
+  }
+  /*---------------------*\
+  #Header 
+\*----------------------*/
+}
