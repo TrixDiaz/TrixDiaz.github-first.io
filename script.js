@@ -11,7 +11,7 @@ const mode = () => {
    changeIcon.classList = isLightkMode
       ? 'bi bi-moon-stars-fill' 
       : 'bi bi-brightness-high' 
-      changeIcon.style.transition = "2s ease";
+      changeIcon.style.transition = "1s ease";
 };
 
 // Add a click event listener to the icon element
