@@ -174,13 +174,19 @@ body {
   display: inline-block;
   max-width: 100%;
 }
+.home .grid-container-2 .message .intro span{
+  /* color: var(--black-color); */
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.10rem;
+  /* -webkit-text-stroke-color: black; */
+}
 .home .grid-container-2 .message .intro :is(h1){
   margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
 .home .grid-container-2 .message .intro :is(p){
-  margin-block: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.20rem;
   color: var(--gray-color);
   font-weight: 550;
