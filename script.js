@@ -4,11 +4,14 @@ console.log("Welcome to Console");
 const mode = () => {
   // Toggle the 'light-mode' class on the body element
   const body = document.body;
+  const changeIcon = document.getElementById('icon');
   body.classList.toggle('light-mode');
 
-   // Store the user's preference in local storage
    const isLightkMode = body.classList.contains('light-mode');
-   localStorage.setItem('lightMode', isLightMode);
+   changeIcon.classList = isLightkMode
+      ? 'bi bi-moon-stars-fill' 
+      : 'bi bi-brightness-high' 
+      changeIcon.style.transition = "2s ease";
 };
 
 // Add a click event listener to the icon element

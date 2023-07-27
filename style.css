@@ -47,7 +47,6 @@ img {
 .grid-container-2 > div,
 .grid-container-3 > div,
 .grid-container-4 > div {
-  text-align: center;
   /* background-color: var(--orange-color); */
 }
 
@@ -104,7 +103,6 @@ img {
   align-items: center;
   height: 1rem;
   padding: 1.50rem;
-  /* background-color: #1c1c1c; */
 }
 .logo,
 .mode{
@@ -124,13 +122,7 @@ img {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--white-color);
-}
-.header .links ul li a:hover{
-  color: var(--violet-color);
-}
-.header .links ul li a.active{
-  color: var(--violet-color);
-  border-bottom: 2px solid var(--violet-color);
+  transition: 2s ease;
 }
 .header .links button{
   background-color: transparent;
@@ -141,6 +133,7 @@ img {
   font-weight: 600;
   font-size: 1rem;
   color: var(--white-color);
+  transition: 2s ease;
 }
 .header .links button:hover{
   color: var(--dark-black-color);
@@ -154,13 +147,77 @@ img {
 body {
   background-color: var(--black-color);
   color: var(--white-color);
+  transition: 2s ease;
 }
-
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+}
+.homes{
+  display: block;
+}
+.home .grid-container-2{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.home .grid-container-2 .message .intro{
+  display: inline-block;
+  max-width: 100%;
+}
+.home .grid-container-2 .message .intro :is(h1){
+  margin-block: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.home .grid-container-2 .message .intro :is(p){
+  margin-block: 1rem;
+  font-size: 1.20rem;
+  color: var(--gray-color);
+  font-weight: 550;
+  display: inline-block;
+  max-width: 50%;
+  
+  
+}
+.home .grid-container-2 .message .social :is(i){
+  font-size: 1.50rem;
+  padding-right: 0.25rem;
+}
+.profile{
+  max-width: 100%;
+  height: 20rem;
+  border-radius: 50%;
+}
 
 /*---------------------*\
   #Light Mode 
 \*----------------------*/
-
+body.light-mode{
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  transition: 2s ease;
+}
+body.light-mode .header .links ul li a{
+  margin-inline: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--black-color);
+  transition: 2s ease;
+}
+body.light-mode .header .links button{
+  background-color: transparent;
+  padding: .50rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid var(--black-color);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--black-color);
+  transition: 1s ease;
+}
 /*---------------------*\
   #Media Queries 
 \*----------------------*/
