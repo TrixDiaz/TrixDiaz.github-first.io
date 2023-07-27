@@ -12,81 +12,25 @@
 <body>
     <main>
         <header>
-            <div class="grid-container-3 header padding ">
-                <div class="logo item-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50"
-                        height="29" viewBox="0 0 50 29">
-                        <defs>
-                            <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%"
-                                viewBox="0 0 114 67">
-                                <image width="114" height="67"
-                                    xlink:href="data:image/png;base64,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" />
-                            </pattern>
-                        </defs>
-                        <rect id="Logo" width="50" height="29" fill="url(#pattern)" />
-                    </svg>
-                </div>
-                <div class="item-4 middle-button">
-                    <button class="button-outline-orange">Hire Me!</button>
-                </div>
-                <nav class="links item-2" id="links">
+           <div class="container-fluid header">
+                <div class="logo"><h2><strong>Trix</strong></h2></div>
+                <div class="links">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><button>Hire Me!</button></li>
+                        <div class="mode" id="mode"><i class="bi bi-brightness-high" id="icon"></i></div>
                     </ul>
-                </nav>
-                <div class="button-hire item-3">
-                    <button class="button-orange">Hire Me!</button>
                 </div>
-                <div class="icon item-4" id="navIcon">
-                    <i class="bi bi-list-nested" id="icons"></i>
-                </div>
-            </div>
-
+               
+           </div>
         </header>
 
-        <!-- <section>
-            <div class="container">
-                <div class="grid-container-4 sidebar">
-                    <div class="item-1 social-media">
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-github"></i>
-                        <i class="bi bi-whatsapp"></i>
-                        <i class="bi bi-apple"></i>
-                    </div>
-                    <div class="item-2">
-                        <div class="item-3 main">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="39" viewBox="0 0 80 39">
-                                <rect id="Rectangle_1" data-name="Rectangle 1" width="80" height="30" rx="4"
-                                    fill="#ff4900" />
-                                <path id="Polygon_1" data-name="Polygon 1" d="M5.5,10,11,0H0Z"
-                                    transform="translate(43 29)" fill="#ff4900" />
-                                <text id="Hey_There_" data-name="Hey There!" transform="translate(11 19)" fill="#fff"
-                                    font-size="12" font-family="ArialMT, Arial">
-                                    <tspan x="0" y="0">Hey There!</tspan>
-                                </text>
-                            </svg>
-                            <h1>Mr. Trix Diaz</h1>
-                            <p><strong>BUILD</strong> your own</p>
-                            <p><strong>PATH</strong> for your</p>
-                            <p><strong>GOALS</strong> in Life.</p>
-                        </div>
-                    </div>
-                    <div class="item-4">right</div>
-                </div>
-            </div>
-        </section> -->
+        
 
-        <!-- <section>
-            <div class="container">
-                <div class="grid-container-2 footer">
-                    <div class="item-1">footer left</div>
-                    <div class="item-2">footer right</div>
-                </div>
-            </div>
-        </section> -->
+    
     </main>
     <script src="script.js"></script>
 </body>

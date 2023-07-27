@@ -25,6 +25,7 @@
   --red-color: #ff2f04;
   --yellow-color: #ffff04;
   --blue-color: #05b7e6;
+  --violet-color: #ec73ec;
 }
 
 /*---------------------*\
@@ -37,9 +38,12 @@ img {
 
 .container {
   max-width: 100%;
-  margin: 1rem;
+  margin-inline: 0.75rem;
 }
 
+.container-fluid {
+  max-width: 100%;
+}
 .grid-container-2 > div,
 .grid-container-3 > div,
 .grid-container-4 > div {
@@ -92,82 +96,52 @@ img {
 }
 
 /*---------------------*\
-  #Padding 
-\*----------------------*/
-.padding {
-  padding: 1rem;
-}
-
-/*---------------------*\
-  #Margin 
-\*----------------------*/
-.margin {
-  margin: 1rem;
-}
-
-/*---------------------*\
   #Header 
 \*----------------------*/
-.header .item-1,
-.header .item-2,
-.header .item-3,
-.header .item-4 {
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1rem;
+  padding: 1.50rem;
+}
+.logo,
+.mode{
+  padding-inline: 1rem;
+  cursor: pointer;
+}
+.mode i{
+  font-size: 1.50rem;
+}
+.header .links ul{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.header .item-2 ul {
-  display: flex;
-}
-
-.header .item-2 ul li a {
-  padding-inline: 0.5rem;
+.header .links ul li a{
+  padding-inline: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--white-color);
 }
-
-.header .item-2 ul li a:hover {
-  border-bottom: 2px solid var(--orange-color);
+.header .links ul li a:hover{
+  color: var(--violet-color);
+}
+.header .links button{
+  background-color: transparent;
+  padding: .50rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid var(--white-color);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--white-color);
+}
+.header .links button:hover{
+  color: var(--dark-black-color);
+  background-color: var(--white-color);
 }
 
-.header .icon {
-  display: none;
-}
-
-.header .middle-button{
-  display: none;
-}
-
-/*---------------------*\
-  #SideBar 
-\*----------------------*/
-/* .sidebar .item-1 {
-  grid-row: 1 / 4;
-} 
-
-.sidebar .item-2 {
-  grid-column: 2 / 4;
-  grid-row: 1 / 4;
-}
-
-.sidebar .social-media{
-  padding: 0.25rem;
-}
-
-.sidebar .social-media i{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding-block: 0.25rem ;
-
-}
-
-.sidebar .main{
-  display: block;
-  text-align: start;
-}
-
-*/
 
 /*---------------------*\
   #Body 
@@ -183,6 +157,9 @@ body {
 
 /* Tablets and larger screens (e.g., iPad) */
 @media (max-width: 1024px) {
+ /*---------------------*\
+  #Header 
+\*----------------------*/
 }
 
 /* Mobile phones and smaller screens */
@@ -190,27 +167,5 @@ body {
 /*---------------------*\
   #Header 
 \*----------------------*/
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header .item-2,
-  .header .item-3 {
-    display: none;
-  }
-  .header .logo,
-  .header .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bi-list-nested {
-    max-width: 100%;
-  }
-  .header .middle-button{
-    display: block;
-  }
-  /*---------------------*\
-  #Header 
-\*----------------------*/
+  
 }
