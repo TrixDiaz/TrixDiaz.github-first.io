@@ -113,6 +113,7 @@ img {
   position: fixed;
   width: 100%;
   z-index: 10;
+  transition: 2s ease;
 }
 .logo,
 .mode,
@@ -230,11 +231,12 @@ body {
 /*---------------------*\
   #About 
 \*----------------------*/
-#home{
+#about{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
+  background-color: var(--dark-black-color);
 }
 .about .grid-container-2{
   display: flex;
@@ -244,6 +246,7 @@ body {
 .about .grid-container-2 img{
   height: 20rem;
   border-radius: 1rem;
+  margin-right: 2.50rem;
 }
 .about .grid-container-2 .item-2{
   position: relative;
@@ -251,19 +254,41 @@ body {
 }
 .about .grid-container-2 .item-2 h5{
   color: var(--blue-color);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
 }
 .about .grid-container-2 .item-2 h4{
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.10rem;
-  margin-block: 1rem
+  margin-block: 2rem;
+  line-height: 2rem;
 }
 .about .grid-container-2 .item-2 p{
   font-size: 1rem;
   line-height: 2rem;
 }
 
+/*---------------------*\
+  #Project 
+\*----------------------*/
+#project{
+  height: 50vh;
+}
+#project .container{
+  margin-top: 10rem;
+  margin-inline: 20rem;
+}
+
+/*---------------------*\
+  #Contact 
+\*----------------------*/
+#contact{
+  height: 50vh;
+}
+#contact .container{
+  margin-top: 10rem;
+  margin-inline: 20rem;
+}
 
 /*---------------------*\
   #Light Mode 
@@ -275,6 +300,7 @@ body.light-mode{
 }
 body.light-mode .header{
   background-color: var(--white-color);
+  transition: 2s ease;
 }
 body.light-mode .header .links ul li a{
   margin-inline: 1rem;
