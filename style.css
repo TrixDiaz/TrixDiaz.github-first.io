@@ -109,12 +109,15 @@ img {
   align-items: center;
   height: 1rem;
   padding: 1.50rem;
-  background-color: transparent;
-  position: relative;
+  background-color: var(--black-color);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 .logo,
-.mode{
-  padding-inline: 1rem;
+.mode,
+.links{
+  margin-inline: 1.25rem;
   cursor: pointer;
 }
 .mode i{
@@ -167,8 +170,6 @@ body {
 }
 .homes{
   display: block;
-  position: relative;
-  top: -10%;
 }
 .home .grid-container-2{
   display: flex;
@@ -271,6 +272,9 @@ body.light-mode{
   background-color: var(--white-color);
   color: var(--dark-color);
   transition: 2s ease;
+}
+body.light-mode .header{
+  background-color: var(--white-color);
 }
 body.light-mode .header .links ul li a{
   margin-inline: 1rem;
