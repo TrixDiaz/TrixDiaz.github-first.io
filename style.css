@@ -157,15 +157,18 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   transition: 2s ease;
+  
 }
 #home{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; 
+  height: 100vh;
 }
 .homes{
   display: block;
+  position: relative;
+  top: -10%;
 }
 .home .grid-container-2{
   display: flex;
@@ -193,7 +196,7 @@ body {
   color: var(--gray-color);
   font-weight: 550;
   display: inline-block;
-  max-width: 75%;
+  max-width: 60%;
 }
 .home .grid-container-2 .message .social :is(i){
   font-size: 1.50rem;
@@ -222,6 +225,44 @@ body {
 .home .grid-container{
   margin-inline: 2.50rem;
 }
+
+/*---------------------*\
+  #About 
+\*----------------------*/
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.about .grid-container-2{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.about .grid-container-2 img{
+  height: 20rem;
+  border-radius: 1rem;
+}
+.about .grid-container-2 .item-2{
+  position: relative;
+   max-width: 31%; 
+}
+.about .grid-container-2 .item-2 h5{
+  color: var(--blue-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.about .grid-container-2 .item-2 h4{
+  font-weight: 600;
+  font-size: 1.10rem;
+  margin-block: 1rem
+}
+.about .grid-container-2 .item-2 p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
 
 /*---------------------*\
   #Light Mode 
@@ -257,6 +298,13 @@ body.light-mode header .toggle-menu button{
   transition: 1s ease;
 }
 body.light-mode header .toggle-menu{background-color:rgba(136, 135, 135, 0.2);transition: 1s ease;}
+
+/*---------------------*\
+  #End Light Mode 
+\*----------------------*/
+
+
+
 /*---------------------*\
   #Media Queries 
 \*----------------------*/
@@ -320,7 +368,7 @@ header .toggle-menu ul li button{
   #Body 
 \*----------------------*/
 #home{
-  position: absolute;
+  position: relative;
   z-index: -1;
 }
 .home .grid-container-2 .message .intro :is(h1){
@@ -338,7 +386,12 @@ header .toggle-menu ul li button{
 .home .grid-container{
   margin-inline: 2.50rem;
 }
+
 }
+
+/*---------------------*\
+  #End for 1024 Media Queries 
+\*----------------------*/
 
 /* Mobile phones and smaller screens */
 @media (max-width: 768px) {
@@ -362,7 +415,7 @@ header .toggle-menu{
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 3.50rem;
+  margin-top: 5.50rem;
 }
 .home .grid-container-2 .item-1,
 .home .grid-container-2 .item-2{
@@ -378,5 +431,9 @@ header .toggle-menu{
 }
 
 }
+
+/*---------------------*\
+  #End for 768 Media Queries 
+\*----------------------*/
 
 @media (max-width: 480px) {}
