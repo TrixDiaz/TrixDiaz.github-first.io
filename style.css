@@ -250,11 +250,13 @@ body.light-mode .header .links button{
   transition: 1s ease;
 }
 .profile{filter: drop-shadow(0px 0px 1rem var(--black-color));}
-body.light-mode header .toggle-menu ul li a{color: var(--pure-black-color);}
+body.light-mode header .toggle-menu ul li a{color: var(--pure-black-color);transition: 1s ease;}
 body.light-mode header .toggle-menu button{
   color: var(--pure-black-color);
   border: 1px solid var(--pure-black-color);
+  transition: 1s ease;
 }
+body.light-mode header .toggle-menu{background-color:rgba(136, 135, 135, 0.2);transition: 1s ease;}
 /*---------------------*\
   #Media Queries 
 \*----------------------*/
@@ -273,25 +275,23 @@ body.light-mode header .toggle-menu button{
 header .toggle-menu{
   display: none;
   /* background-color: var(--gray-color); */
-  background-color: var(--gray-color);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(1rem);
   position: absolute;
   text-align: center;
   top: 3.50rem;
   right: 2rem;
-  opacity: 0;
   padding-inline: 10rem;
   padding-block: 1rem;
   border-radius: 1rem;
-  transition: 0.3 ease;
-  transition-delay: 1s;
+  transition: 0.5s ease;
+  /* transition-delay: 1s; */
 }
 
 header .toggle-menu.open{
   display: block;
-  opacity: 1;
-  transition: 0.3 ease;
-  transition-delay: 1s;
+  transition: 0.5s ease;
+  /* transition-delay: 1s; */
 }
 
 header .toggle-menu ul li {
@@ -345,5 +345,38 @@ header .toggle-menu ul li button{
 /*---------------------*\
   #Header 
 \*----------------------*/
-  
+header .toggle-menu{
+  position: absolute;
+  margin-inline: 1rem;
+  top: 2;
+  right: 0;
 }
+header .toggle-menu{
+  padding-inline: 7rem;
+}
+/*---------------------*\
+  #Home 
+\*----------------------*/
+.home .grid-container-2{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 3.50rem;
+}
+.home .grid-container-2 .item-1,
+.home .grid-container-2 .item-2{
+  text-align: center;
+  margin-block: 1rem;
+}
+.home .grid-container .programming{
+  text-align: center;
+  display: block;
+}
+.home .grid-container .programming :is(h4,img){
+  margin-block: 0.50rem;
+}
+
+}
+
+@media (max-width: 480px) {}

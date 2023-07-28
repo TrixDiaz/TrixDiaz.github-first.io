@@ -27,6 +27,7 @@ const toggleNav = () => {
     ? 'bi bi-x-lg'
     : 'bi bi-list-nested'
     toggleMenu.style.transition = "2s ease-out";
+   
 
 };
 
