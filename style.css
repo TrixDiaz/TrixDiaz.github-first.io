@@ -21,7 +21,7 @@
   --black-color: #252526;
   --dark-black-color: #111111;
   --pure-black-color: #000000;
-  --gray-color: #bcbcbc;
+  --gray-color: #c6cacf;
   --red-color: #ff2f04;
   --yellow-color: #ffff04;
   --blue-color: #05b7e6;
@@ -110,6 +110,7 @@ img {
   height: 1rem;
   padding: 1.50rem;
   background-color: transparent;
+  position: relative;
 }
 .logo,
 .mode{
@@ -147,7 +148,8 @@ img {
   background-color: var(--white-color);
 }
 
-
+.header .menu{display: none;}
+header .toggle-menu{display: none;}
 /*---------------------*\
   #Body 
 \*----------------------*/
@@ -248,7 +250,11 @@ body.light-mode .header .links button{
   transition: 1s ease;
 }
 .profile{filter: drop-shadow(0px 0px 1rem var(--black-color));}
-
+body.light-mode header .toggle-menu ul li a{color: var(--pure-black-color);}
+body.light-mode header .toggle-menu button{
+  color: var(--pure-black-color);
+  border: 1px solid var(--pure-black-color);
+}
 /*---------------------*\
   #Media Queries 
 \*----------------------*/
@@ -258,10 +264,65 @@ body.light-mode .header .links button{
 /*---------------------*\
   #Header 
 \*----------------------*/
+.header .links{display: none;}
+.header .menu{
+  display: block;
+  font-size: 1.50rem;
+}
+
+header .toggle-menu{
+  display: none;
+  /* background-color: var(--gray-color); */
+  background-color: var(--gray-color);
+  backdrop-filter: blur(1rem);
+  position: absolute;
+  text-align: center;
+  top: 3.50rem;
+  right: 2rem;
+  opacity: 0;
+  padding-inline: 10rem;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  transition: 0.3 ease;
+  transition-delay: 1s;
+}
+
+header .toggle-menu.open{
+  display: block;
+  opacity: 1;
+  transition: 0.3 ease;
+  transition-delay: 1s;
+}
+
+header .toggle-menu ul li {
+  padding-block: 0.30rem;
+}
+
+header .toggle-menu ul li a{
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header .toggle-menu ul li button{
+  width: 100%;
+  background-color: transparent;
+  padding: .50rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid var(--white-color);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--white-color);
+}
 
 /*---------------------*\
   #Body 
 \*----------------------*/
+#home{
+  position: absolute;
+  z-index: -1;
+}
 .home .grid-container-2 .message .intro :is(h1){
   margin-bottom: 0.50rem;
   font-size: 2.45rem;
