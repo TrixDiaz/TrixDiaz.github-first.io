@@ -573,8 +573,8 @@ body.light-mode .footer .item-2 i {
     color: var(--white-color);
   }
 
-  /*---------------------*\
-  #Body 
+/*---------------------*\
+  #Home 
 \*----------------------*/
   #home {
     position: relative;
@@ -595,6 +595,28 @@ body.light-mode .footer .item-2 i {
   .home .grid-container {
     margin-inline: 2.5rem;
   }
+/*---------------------*\
+  #About 
+\*----------------------*/
+.about .grid-container-2{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.about .grid-container-2 .item-1{
+  justify-content: center;
+  margin-right: 0;
+}
+.about .grid-container-2 .item-1 img {
+  height: 20rem;
+ 
+}
+.about .grid-container-2 .item-2 {
+  padding-block: 1rem;
+  max-width: 100%;
+  margin-inline: 3rem
+}
 }
 
 /*---------------------*\
