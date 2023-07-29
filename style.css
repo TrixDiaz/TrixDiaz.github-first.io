@@ -655,7 +655,7 @@ body.light-mode .footer .item-2 i {
 
 .container {
   max-width: 100%;
-  margin-inline: 0rem;
+  margin-inline: 0;
 }
   .home .grid-container-2 {
     display: flex;
@@ -758,4 +758,34 @@ body.light-mode .footer .item-2 i {
 \*----------------------*/
 
 @media (max-width: 480px) {
+  .homes {
+    margin-inline: 0;
+}
+.about {
+  padding: 1rem;
+}
+#project .container {
+  padding: 1rem;
+}
+.project .item-2 .title{
+  margin-top: 1rem;
+}
+.project .item-2 .description p {
+  margin-inline: 0;
+}
+.project .item-2 .description{
+  padding-block: 1rem;
+}
+.about .grid-container-2 .item-2 h4 {
+  font-size: 1.5rem;
+}
+.about .grid-container-2 .item-2 {
+  margin-inline: 1rem;
+}
+.footer .item-1 {
+  font-size: .75rem;
+}
+.footer .item-2 {
+  padding-block: .5rem;
+}
 }
