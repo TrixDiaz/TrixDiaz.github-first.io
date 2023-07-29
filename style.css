@@ -81,7 +81,6 @@ img {
   #Buttons 
 \*----------------------*/
 
-
 /*---------------------*\
   #Header 
 \*----------------------*/
@@ -95,7 +94,7 @@ img {
   width: 100%;
   z-index: 10;
   transition: 2s ease;
-  padding-block: 1.50rem;
+  padding-block: 1.5rem;
 }
 .logo,
 .menu,
@@ -189,6 +188,7 @@ body {
 .home .grid-container-2 .message .social :is(i) {
   font-size: 1.5rem;
   padding-right: 0.5rem;
+  color: var(--white-color);
 }
 .profile {
   max-width: 100%;
@@ -217,194 +217,197 @@ body {
 /*---------------------*\
   #About 
 \*----------------------*/
-#about{
+#about {
   max-height: 50%;
   background-color: var(--dim-black-color);
   transition: 2s ease;
 }
-.about{
+.about {
   padding: 5rem;
 }
-.about .grid-container-2{
+.about .grid-container-2 {
   display: flex;
   justify-content: center;
 }
-.about .grid-container-2 .item-1{
+.about .grid-container-2 .item-1 {
   align-items: center;
   justify-content: end;
   margin-right: 2rem;
 }
-.about .grid-container-2 .item-1 img{
+.about .grid-container-2 .item-1 img {
   max-width: 100%;
   height: 25rem;
   border-radius: 2rem;
-  
 }
-.about .grid-container-2 .item-2{
+.about .grid-container-2 .item-2 {
   align-items: start;
-  max-width: 50%;
+  max-width: 45%;
 }
 
-.about .grid-container-2 .item-2 h5{
+.about .grid-container-2 .item-2 h5 {
   color: var(--blue-color);
   font-size: 1rem;
   text-transform: uppercase;
-  
 }
-.about .grid-container-2 .item-2 h4{
+.about .grid-container-2 .item-2 h4 {
   padding-block: 1rem;
   font-size: 2rem;
 }
-.about .grid-container-2 .item-2 p{
-  line-height: 1.50rem;
+.about .grid-container-2 .item-2 p {
+  line-height: 1.5rem;
 }
 
 /*---------------------*\
   #Project 
 \*----------------------*/
-#project{
+#project {
   max-height: 50%;
 }
 
-#project .container{
+#project .container {
   padding: 5rem;
 }
 
-.project{
- background-color: var(--dim-black-color);
- padding: 1rem; 
- border-radius: 1rem;
- transition: 2s ease;
+.project {
+  background-color: var(--dim-black-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: 2s ease;
+  max-height: 100%;
 }
-#project .container .title{
+#project .container .title {
   padding-bottom: 1rem;
 }
 
-#project .container .title h5{
+#project .container .title h5 {
   color: var(--blue-color);
   text-transform: uppercase;
   font-size: 1rem;
 }
-#project .container .title h4{
-  font-size: 1.50rem;
+#project .container .title h4 {
+  font-size: 1.5rem;
 }
 
-.project .item-1 img{
+.project .item-1 img {
   border-radius: 1rem;
   width: 100%;
   height: 100%;
 }
 
-.project .item-2{
+.project .item-2 {
   text-align: center;
   justify-content: center;
 }
 
-.project .item-2 .title{
+.project .item-2 .title {
+  margin-top: 0.5rem;
   color: var(--blue-color);
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
 }
-.project .item-2 .description{
-  padding-block: 1rem;
+.project .item-2 .description {
+  padding-block: 2rem;
 }
 
-.project .item-2 .description p{
+.project .item-2 .description p {
   color: var(--gray-color);
+  margin-inline: 6rem;
+  line-height: 1.50rem;
 }
-.project .language{
+.project .language {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: .50rem;
+  padding-block: 1rem;
 }
-.project .language h5{
-  margin-inline: .50rem;
+.project .language h5 {
+  margin-inline: 1rem;
   padding: 1rem;
   background-color: var(--black-color);
 }
 
-.project .link a{
+.project .link {
+  padding-block: 1rem;
+}
+
+.project .link a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   color: var(--white-color);
   cursor: pointer;
 }
 
-.project .link h5{
-  padding-inline: .25rem;
+.project .link h5 {
+  padding-inline: 0.25rem;
 }
-
-
 
 /*---------------------*\
   #Contact 
 \*----------------------*/
-#contact{
+#contact {
   max-height: 50%;
   background-color: var(--dim-black-color);
   transition: 2s ease;
 }
 
-#contact .container{
+#contact .container {
   padding: 5rem;
 }
 
-.contact .title{
+.contact .title {
   padding-block: 1rem;
 }
 
-.contact .title h5{
+.contact .title h5 {
   padding-bottom: 1rem;
   color: var(--blue-color);
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-.contact .title h4{
+.contact .title h4 {
   font-size: 1.75rem;
 }
 
-.contact .location{
+.contact .location {
   display: flex;
   justify-content: start;
   align-items: center;
   padding-block: 2rem;
 }
 
-.contact .location .item-1{
+.contact .location .item-1 {
   padding-right: 5rem;
 }
 
-.contact .location .item-1 .info{
+.contact .location .item-1 .info {
   display: flex;
 }
 
-.contact .location .item-1 .info i{
+.contact .location .item-1 .info i {
   padding-right: 1rem;
   font-size: 2rem;
 }
 
-.contact .location .item-2{
+.contact .location .item-2 {
   display: flex;
 }
 
-.contact .location .item-2 i{
+.contact .location .item-2 i {
   padding-right: 1rem;
   font-size: 2rem;
 }
-
 
 /*---------------------*\
   #Footer 
 \*----------------------*/
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
   transition: 2s ease;
@@ -412,6 +415,7 @@ body {
 .footer .item-2 i {
   font-size: 1.5rem;
   padding-inline: 1rem;
+  color: var(--white-color);
 }
 
 /*---------------------*\
@@ -461,38 +465,46 @@ body.light-mode header .toggle-menu {
   background-color: rgba(136, 135, 135, 0.2);
   transition: 2s ease;
 }
-body.light-mode #about{
+body.light-mode .home .grid-container-2 .message .social :is(i) {
+  color: var(--black-color);
+  transition: 2s ease;
+}
+body.light-mode #about {
   background-color: var(--white-color);
   transition: 2s ease;
 }
 
-body.light-mode .project{
+body.light-mode .project {
   background-color: var(--white-color);
   transition: 2s ease;
 }
 
-body.light-mode .project .language h5{
+body.light-mode .project .language h5 {
   background-color: var(--dim-white-color);
   transition: 2s ease;
 }
 
-body.light-mode .project .item-1{
-  filter: drop-shadow(0px 0px .25rem rgba(0, 0, 0, 0.5));
+body.light-mode .project .item-1 {
+  filter: drop-shadow(0px 0px 0.25rem rgba(0, 0, 0, 0.5));
   transition: 2s ease;
 }
 
-body.light-mode .project .link a{
+body.light-mode .project .link a {
   transition: 2s ease;
-  color: var(--black-color)
+  color: var(--black-color);
 }
 
-body.light-mode #contact{
+body.light-mode #contact {
   background-color: var(--white-color);
   transition: 2s ease;
 }
 
 body.light-mode .footer {
   background-color: var(--dim-white-color);
+  transition: 2s ease;
+}
+body.light-mode .footer .item-2 i {
+  color: var(--black-color);
   transition: 2s ease;
 }
 
