@@ -617,6 +617,18 @@ body.light-mode .footer .item-2 i {
   max-width: 100%;
   margin-inline: 3rem
 }
+/*---------------------*\
+  #Project 
+\*----------------------*/
+.project{
+  display: block;
+}
+.project .item-1{
+  margin: 2rem;
+}
+.project .item-2 .title{
+  margin-top: 3rem;
+}
 }
 
 /*---------------------*\
@@ -640,18 +652,38 @@ body.light-mode .footer .item-2 i {
   /*---------------------*\
   #Home 
 \*----------------------*/
+
+.container {
+  max-width: 100%;
+  margin-inline: 0rem;
+}
   .home .grid-container-2 {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: 5.5rem;
+    /* margin-top: 5rem; */
   }
+  
   .home .grid-container-2 .item-1,
   .home .grid-container-2 .item-2 {
     text-align: center;
-    margin-block: 1rem;
+    margin-block: 0;
   }
+  .home .grid-container-2 .message .intro :is(h1) {
+    margin-bottom: 1rem;
+    font-size: 2.50rem;
+    font-weight: bold;
+  }
+
+  .home .grid-container-2 .message .intro :is(p) {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    font-weight: 550;
+    display: inline-block;
+    max-width: 100%;
+  }
+
   .home .grid-container .programming {
     text-align: center;
     display: block;
@@ -659,6 +691,66 @@ body.light-mode .footer .item-2 i {
   .home .grid-container .programming :is(h4, img) {
     margin-block: 0.5rem;
   }
+  .profile{
+    height: 15rem;
+  }
+  .home .grid-container .programming img{
+    padding-inline: .5rem;
+  }
+  .home .grid-container-2,
+.home .grid-container {
+  margin-inline: 0;
+}
+
+ /*---------------------*\
+  #About 
+\*----------------------*/
+.about {
+  padding: 2rem;
+}
+#project .container {
+  padding: 2rem;
+}
+.project .item-1 {
+  margin: .5rem;
+}
+/*---------------------*\
+  #Contact
+\*----------------------*/
+#contact .container {
+  padding: 2rem;
+}
+.contact .location {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.contact .title h4 {
+  font-size: 1.50rem;
+}
+.contact .location .item-1 {
+  padding-right: 0;
+  padding-bottom: 1rem;
+}
+.contact .location .item-1 {
+  padding-right: 0;
+}
+/*---------------------*\
+  #About
+\*----------------------*/
+.footer {
+  display: block;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .item-1{
+  font-size: 1rem;
+}
+.footer .item-2{
+  padding-block: 1rem;
+}
 }
 
 /*---------------------*\
