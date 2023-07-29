@@ -362,6 +362,64 @@ body {
 /*---------------------*\
   #Contact 
 \*----------------------*/
+#contact{
+  max-height: 50%;
+  background-color: var(--dim-black-color);
+}
+
+#contact .container{
+  padding: 3rem;
+}
+
+.contact .title{
+  padding-block: 1rem;
+}
+
+.contact .title h5{
+  padding-bottom: 1rem;
+  color: var(--blue-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.contact .title h4{
+  font-size: 1.75rem;
+}
+
+.contact .location{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+.contact .location .item-1{
+  padding-right: 5rem;
+}
+
+.contact .location .item-1 .info{
+  display: flex;
+}
+
+.contact .location .item-1 .info i{
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+
+.contact .location .item-2{
+  display: flex;
+}
+
+.contact .location .item-2 i{
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+
+
+
+
+
+
 
 /*---------------------*\
   #Footer 
@@ -370,7 +428,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--dim-black-color);
   padding: 2rem;
 }
 .footer .item-2 i {
