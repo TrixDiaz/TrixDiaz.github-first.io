@@ -65,4 +65,3 @@ function typeText(text, index) {
 
 typeText(texts[0], 0); // Start the typing animation with the first text
 
-
