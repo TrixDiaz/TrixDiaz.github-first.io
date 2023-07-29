@@ -112,6 +112,18 @@ img {
   z-index: 10;
   transition: 2s ease;
   padding-block: 1.5rem;
+  animation: slideFromTop 1s ease-in;
+}
+/* Define the keyframes for the animation */
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .logo,
 .menu,
@@ -174,6 +186,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* Apply the animation to the element */
+  animation: slideInFromLeft 1s ease-in;
+}
+/* Define the keyframes for the animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .homes {
   display: block;
@@ -250,7 +275,9 @@ body {
 }
 .about {
   padding: 5rem;
+  transform: scale(.7);
 }
+
 .about .grid-container-2 {
   display: flex;
   justify-content: center;
