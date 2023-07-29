@@ -274,6 +274,7 @@ body {
   border-radius: 1rem;
   transition: 2s ease;
   max-height: 100%;
+  margin-block: 1rem
 }
 #project .container .title {
   padding-bottom: 1rem;
