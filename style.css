@@ -80,28 +80,7 @@ img {
 /*---------------------*\
   #Buttons 
 \*----------------------*/
-.button-orange {
-  background-color: var(--orange-color);
-  border: 1px solid var(--orange-color);
-  border-radius: 5px;
-  padding: 10px;
-  color: var(--white-color);
-}
-.button-orange:hover {
-  background-color: transparent;
-  color: var(--white-color);
-}
-.button-outline-orange {
-  background-color: transparent;
-  border: 1px solid var(--orange-color);
-  border-radius: 5px;
-  padding: 10px;
-  color: var(--orange-color);
-}
-.button-outline-orange:hover {
-  background-color: var(--orange-color);
-  color: var(--white-color);
-}
+
 
 /*---------------------*\
   #Header 
@@ -177,6 +156,7 @@ body {
 }
 .homes {
   display: block;
+  margin-inline: 3rem;
 }
 .home .grid-container-2 {
   display: flex;
@@ -240,6 +220,7 @@ body {
 #about{
   max-height: 50%;
   background-color: var(--dim-black-color);
+  transition: 2s ease;
 }
 .about{
   padding: 5rem;
@@ -293,6 +274,7 @@ body {
  background-color: var(--dim-black-color);
  padding: 1rem; 
  border-radius: 1rem;
+ transition: 2s ease;
 }
 #project .container .title{
   padding-bottom: 1rem;
@@ -365,10 +347,11 @@ body {
 #contact{
   max-height: 50%;
   background-color: var(--dim-black-color);
+  transition: 2s ease;
 }
 
 #contact .container{
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .contact .title{
@@ -416,11 +399,6 @@ body {
 }
 
 
-
-
-
-
-
 /*---------------------*\
   #Footer 
 \*----------------------*/
@@ -429,6 +407,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
+  transition: 2s ease;
 }
 .footer .item-2 i {
   font-size: 1.5rem;
@@ -464,26 +443,57 @@ body.light-mode .header .links button {
   font-weight: 600;
   font-size: 1rem;
   color: var(--black-color);
-  transition: 1s ease;
+  transition: 2s ease;
 }
 .profile {
   filter: drop-shadow(0px 0px 1rem var(--black-color));
 }
 body.light-mode header .toggle-menu ul li a {
   color: var(--pure-black-color);
-  transition: 1s ease;
+  transition: 2s ease;
 }
 body.light-mode header .toggle-menu button {
   color: var(--pure-black-color);
   border: 1px solid var(--pure-black-color);
-  transition: 1s ease;
+  transition: 2s ease;
 }
 body.light-mode header .toggle-menu {
   background-color: rgba(136, 135, 135, 0.2);
-  transition: 1s ease;
+  transition: 2s ease;
 }
-body.light-mode .footer {
+body.light-mode #about{
   background-color: var(--white-color);
+  transition: 2s ease;
+}
+
+body.light-mode .project{
+  background-color: var(--white-color);
+  transition: 2s ease;
+}
+
+body.light-mode .project .language h5{
+  background-color: var(--dim-white-color);
+  transition: 2s ease;
+}
+
+body.light-mode .project .item-1{
+  filter: drop-shadow(0px 0px .25rem rgba(0, 0, 0, 0.5));
+  transition: 2s ease;
+}
+
+body.light-mode .project .link a{
+  transition: 2s ease;
+  color: var(--black-color)
+}
+
+body.light-mode #contact{
+  background-color: var(--white-color);
+  transition: 2s ease;
+}
+
+body.light-mode .footer {
+  background-color: var(--dim-white-color);
+  transition: 2s ease;
 }
 
 /*---------------------*\

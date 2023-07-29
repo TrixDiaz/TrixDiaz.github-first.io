@@ -26,7 +26,7 @@ const toggleNav = () => {
   toggleMenu.classList = isOpen
     ? 'bi bi-x-lg'
     : 'bi bi-list-nested'
-    toggleMenu.style.transition = "2s ease-out";
+    toggleMenu.style.transition = "2s ease";
    
 
 };
