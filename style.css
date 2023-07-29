@@ -14,6 +14,23 @@
 }
 
 /*---------------------*\
+  #Custom Scrollable side   
+\*----------------------*/
+/* The whole scrollbar */
+::-webkit-scrollbar { 
+  width: .50rem;
+}
+/* The whole Scrollbar Track / Vertical Track */
+::-webkit-scrollbar-track { 
+  background: #d1e5ff;
+}
+/* The scrollbar thumb or the hand on track */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff,#ff22e6);
+  border-radius: 1rem;
+}
+
+/*---------------------*\
   #Colors 
 \*----------------------*/
 :root {
@@ -519,6 +536,7 @@ body.light-mode .footer .item-2 i {
 
 /* Tablets and larger screens (e.g., iPad) */
 @media (max-width: 1024px) {
+  
   /*---------------------*\
   #Header 
 \*----------------------*/
