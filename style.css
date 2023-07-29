@@ -53,7 +53,6 @@
 \*----------------------*/
 img {
   max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
 }
 
@@ -262,7 +261,7 @@ body {
   padding-inline: 1.5rem;
 }
 .home .grid-container-2,
-.home .grid-container {
+.home .grid-container{
   margin-inline: 2.5rem;
 }
 
@@ -300,15 +299,16 @@ body {
 
 .about .grid-container-2 .item-2 h5 {
   color: var(--blue-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .about .grid-container-2 .item-2 h4 {
   padding-block: 1rem;
   font-size: 2rem;
 }
-.about .grid-container-2 .item-2 p {
-  line-height: 1.5rem;
+.about .grid-container-2 .item-2 p{
+  line-height: 2.25rem;
+  font-size: 1.50rem;
 }
 
 /*---------------------*\
