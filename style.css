@@ -132,7 +132,11 @@ img {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--white-color);
-  transition: 2s ease;
+ 
+}
+
+.header .links ul li a:hover{
+  color: var(--blue-color);
 }
 .header .links button {
   background-color: transparent;
@@ -163,6 +167,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   transition: 2s ease;
+  overflow-x: hidden;
 }
 #home {
   display: flex;
@@ -206,6 +211,10 @@ body {
   font-size: 1.5rem;
   padding-right: 0.5rem;
   color: var(--white-color);
+}
+
+.home .grid-container-2 .message .social :is(i):hover{
+  color: var(--blue-color);
 }
 .profile {
   max-width: 100%;
@@ -359,6 +368,8 @@ body {
   cursor: pointer;
 }
 
+.project .link a:hover{color: var(--blue-color);}
+
 .project .link h5 {
   padding-inline: 0.25rem;
 }
@@ -435,6 +446,7 @@ body {
   padding-inline: 1rem;
   color: var(--white-color);
 }
+.footer .item-2 i:hover{color: var(--blue-color);}
 
 /*---------------------*\
   #Light Mode 
@@ -454,7 +466,10 @@ body.light-mode .header .links ul li a {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--black-color);
-  transition: 2s ease;
+  
+}
+body.light-mode .header .links ul li a:hover{
+  color: var(--blue-color);
 }
 body.light-mode .header .links button {
   background-color: transparent;
@@ -485,7 +500,9 @@ body.light-mode header .toggle-menu {
 }
 body.light-mode .home .grid-container-2 .message .social :is(i) {
   color: var(--black-color);
-  transition: 2s ease;
+}
+body.light-mode .home .grid-container-2 .message .social :is(i):hover{
+  color: var(--blue-color);
 }
 body.light-mode #about {
   background-color: var(--white-color);
@@ -508,9 +525,9 @@ body.light-mode .project .item-1 {
 }
 
 body.light-mode .project .link a {
-  transition: 2s ease;
   color: var(--black-color);
 }
+body.light-mode .project .link a:hover{color: var(--blue-color);}
 
 body.light-mode #contact {
   background-color: var(--white-color);
@@ -523,8 +540,8 @@ body.light-mode .footer {
 }
 body.light-mode .footer .item-2 i {
   color: var(--black-color);
-  transition: 2s ease;
 }
+body.light-mode .footer .item-2 i:hover{color: var(--blue-color);}
 
 /*---------------------*\
   #End Light Mode 
