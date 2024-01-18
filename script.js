@@ -31,10 +31,6 @@ const toggleNav = () => {
 const icon = document.getElementById("icon");
 icon.addEventListener("click", mode);
 
-// Add a click event listener to the menu icon element
-const menuIcon = document.getElementById("menu-icon");
-menuIcon.addEventListener("click", mode);
-
 // Add a click event listener to the toggle menu element
 const toggleMenu = document.getElementById("toggle-menu");
 toggleMenu.addEventListener("click", toggleNav);
