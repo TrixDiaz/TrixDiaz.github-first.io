@@ -5,7 +5,6 @@ const mode = () => {
   // Toggle the 'light-mode' class on the body element
   const body = document.body;
   const changeIcon = document.getElementById("icon");
-  const menuChangeIcon = document.getElementById("menu-icon");
   body.classList.toggle("light-mode");
 
   const isLightMode = body.classList.contains("light-mode");
